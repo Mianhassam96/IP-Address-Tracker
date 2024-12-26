@@ -1,0 +1,217 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Content */
+main {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    flex-grow: 1;
+}
+
+/* Header */
+.top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 16px;
+    background-color: #f4f6f9;
+    color: #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4caf50;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button img {
+    width: 18px;
+    height: 18px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Info Section */
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.field-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+
+.info-field {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Map */
+#map {
+    height: 400px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal */
+dialog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+dialog h3 {
+    font-size: 18px;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+#close-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#close-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+.footer {
+    background-color: #1b1b1b; /* Dark background for contrast */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    opacity: 0.8; /* Slight fade for text */
+}
+
+.footer a {
+    color: #14ff1b; /* Green color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.footer a:hover {
+    color: #ffeb3b; /* Yellow color for hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social a {
+    font-size: 24px; /* Icon size */
+    color: #ffe601;
+    margin: 0 15px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for icons */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.social a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Brighten background on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.social a:active {
+    transform: scale(1); /* Reset scale when active (clicked) */
+}
+
+/* Add hover shadow effect */
+.social a:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Soft glow on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .footer {
+        padding: 30px 15px; /* Smaller padding on mobile */
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .social a {
+        font-size: 20px; /* Smaller icons on mobile */
+        margin: 0 10px;
+    }
+}

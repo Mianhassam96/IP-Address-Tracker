@@ -139,7 +139,7 @@ dialog h3 {
 
 /* Footer */
 .footer {
-    background-color: #1b1b1b; /* Dark background for contrast */
+    background: linear-gradient(135deg, #6e7fef, #5a3ea2); /* Gradient for a more dynamic look */
     color: #fff;
     padding: 40px 0;
     text-align: center;
@@ -150,6 +150,7 @@ dialog h3 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .footer p {
